@@ -26,4 +26,19 @@ Example:KingJames Example2:BarackObama
 5,the six recent tweets of the selected user will be spliced into a video, each video frame will be displayed for three seconds.
 
 
+### Simple Queue System
+
+The program for queue system is in the main exercise file, named myQueueSystem.py
+
+It will collect tweets and transfer to video for all the user's that in the name_list.
+
+You will be informed which process is now going on, which process just finished and etc.
+
+To run the program:
+
+`python myQueueSystem.py`
+
+You may change the users in the name_list to whoever you want. 
+
+
 
