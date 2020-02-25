@@ -4,7 +4,7 @@
 
 1,Use the below command line to download my repo:
 
-`git clone https://github.com/BUEC500C1/video-bdjbray.git`
+`git clone https://github.com/bdjbray/twitter_extractor.git`
 
 2,Use the below commad line to download the required files:
 
