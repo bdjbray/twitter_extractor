@@ -32,7 +32,7 @@ Example:KingJames Example2:BarackObama
 5,the six recent tweets of the selected user will be spliced into a video, each video frame will be displayed for three seconds.
 
 
-### Simple Queue System
+### Simple Queue
 
 The program for queue system is in the main exercise file, named myQueueSystem.py
 
