@@ -46,5 +46,12 @@ To run the program:
 
 You may change the users in the name_list to whoever you want. 
 
+# Result 
+
+
+You can choose any user you want, the picture below is a result after using queue system to retrieve tweets of four users.
+
+
+![image]()
 
 
