@@ -1,5 +1,11 @@
 # twitter_extractor
 
+# Description 
+
+Retrieve the tweets of a targeted user, and convert the tweets into a video.
+
+Play the video, each frame will be showed for 3 seconds.
+
 # Setup
 
 1,Use the below command line to download my repo:
