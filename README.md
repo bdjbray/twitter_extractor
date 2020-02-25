@@ -4,7 +4,7 @@
 
 1,Use the below command line to download my repo:
 
-`git clone https://github.com/`
+`git clone https://github.com/BUEC500C1/video-bdjbray.git`
 
 2,Use the below commad line to download the required files:
 
@@ -24,3 +24,6 @@ Could be any user that you want to choose,should be their twitter username,not t
 Example:KingJames Example2:BarackObama
 
 5,the six recent tweets of the selected user will be spliced into a video, each video frame will be displayed for three seconds.
+
+
+
