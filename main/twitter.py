@@ -13,7 +13,6 @@ import pandas as pd
 import os
 import sys
 import time
-import random
 
 
 
@@ -107,24 +106,17 @@ if __name__ == '__main__':
     tweet_analyzer = TweetAnalyzer()
     api = twitter_client.get_twitter_client_api()
     thechosen_user=sys.argv[1]
-    #thebackground=sys.argv[2]
-    tweets = api.user_timeline(screen_name=thechosen_user, count=10)  #choose the user we want to listen and the number of tweets we want to analyse
+    tweets = api.user_timeline(screen_name=thechosen_user, count=10)  
     df = tweet_analyzer.tweets_to_data_frame(tweets)
-    pd.set_option('display.max_colwidth', -1)  #change the maximum size
+    pd.set_option('display.max_colwidth', -1)
     im = Image.new('RGB', (1200, 400), (255, 255, 255))
-    #print(df.head(5))  #choose the first ten objects in the dataframe
-    #os.system("ffmpeg -i test.jpg  -vf drawtext=text="text1":fontcolor=black:fontsize=75:x=1002:y=100: tttt.jpg")
     for i in range(1,7):
         text1=str(df.head(i))
-        #image=Image.open(thebackground)
         font_type=ImageFont.truetype('Arial.ttf',20)
         draw=ImageDraw.Draw(im)
         draw.text(xy=(50,50),text=text1,fill=(0,0,0),font=font_type)
-        #image.show()
         im.save("img0"+str(i)+".PNG")
-        #time.sleep(3)
-    num=random.randint(1,10)
-    cmd1="ffmpeg -r 1/3 -i img%02d.png -c:v libx264 -vf fps=25 -pix_fmt yuv420p tweets"+str(num)+".mp4"
+    cmd1="ffmpeg -r 1/3 -i img%02d.png -c:v libx264 -vf fps=25 -pix_fmt yuv420p tweets"+str(thechosen_user)+".mp4"
     os.system(cmd1)
 
 
